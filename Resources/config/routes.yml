@@ -1,0 +1,7 @@
+processing_status:
+    pattern: /
+    defaults: {_controller: processing.controller.status:indexAction }
+
+processing_queue:
+    pattern: /{queue}
+    defaults: {_controller: processing.controller.status:detailsAction}

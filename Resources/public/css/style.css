@@ -1,0 +1,85 @@
+* {
+    margin  : 0;
+    padding : 0;
+}
+
+html, body {
+    font       : 13px/18px 'helvetica neue', helvetica, arial, sans-serif;
+    background : #EFEFEF;
+    color      : #444444;
+}
+
+a {
+    text-decoration : none;
+    color           : #444444;
+}
+
+h1 {
+    line-height : 2em;
+}
+
+header, #content, footer {
+    margin-left : 100px;
+}
+
+dl.queue-list {
+    display : block;
+    width   : 150px;
+    float   : left;
+}
+
+dl.queue-list dd {
+    float : right;
+}
+
+dl.queue-list dt {
+    clear     : left;
+    float     : left;
+    width     : 100px;
+    max-width : 100px;
+    overflow  : hidden;
+}
+
+dl.queue-list dd {
+    margin-top            : 5px;
+    padding               : 5px 10px;
+    background            : #FFF;
+    border                : 1px solid #DDD;
+    font-weight           : bold;
+
+    -webkit-border-radius : 10px;
+    -moz-border-radius    : 10px;
+    -ms-border-radius     : 10px;
+    -o-border-radius      : 10px;
+    border-radius         : 10px;
+
+    -webkit-box-shadow    : inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow       : inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow        : inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow         : inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow            : inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+dl.queue-list dt a {
+    display     : block;
+    font-size   : 16px;
+    line-height : 30px;
+    padding     : 5px 0 0 0px;
+}
+
+table {
+    margin-left     : 20px;
+    float           : left;
+    width           : 700px;
+    border-collapse : collapse;
+}
+
+table tbody tr td,
+table tbody tr th {
+    border-top : 1px solid #CCC;
+}
+
+table tbody tr:nth-child(2n) {
+    background : white;
+}

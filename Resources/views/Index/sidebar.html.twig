@@ -1,0 +1,7 @@
+<h2>Queues</h2>
+<dl class="queue-list">
+    {% for name, queue in queues %}
+    <dt><a href="{{path('processing_queue', {'queue' : name})}}">{{name}}</a></dt>
+    <dd class="count">{{queue}}</dd>
+    {% endfor %}
+</dl>

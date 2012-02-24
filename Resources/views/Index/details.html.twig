@@ -1,0 +1,24 @@
+{% extends 'ProcessingBundle::layout.html.twig' %}
+
+{% block body %}
+{% render 'processing.controller.status:sidebarAction'%}
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Job</th>
+            <th scope="col">Arguments</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in queue %}
+        <tr>
+            <th scope="row">{{data.job}}</th>
+            <td>
+                <pre>{{dump(data.arguments)}}</pre>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+        {% endblock %}
