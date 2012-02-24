@@ -18,7 +18,7 @@
         <service id="processing.connection" alias="processing.connection.redis" />
         <service id="processing.connection.redis" class="%processing.connection.class%" />
 
-        <!-- profiler -->
+        <!-- data collector for web profilter -->
         <service id="processing.datacollector" class="%processing.datacollector.class%">
             <tag name="data_collector" template="ProcessingBundle:Profiler:show" id="processing"/>
             <argument type="service" id="processing.processor" />

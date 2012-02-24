@@ -11,6 +11,11 @@ namespace Processing\Bundle\ProcessingBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+/**
+ * Processing Symfony Bundle
+ *
+ * @author Marcel Beerta <marcel@etcpasswd.de>
+ */
 class ProcessingBundle extends Bundle
 {
 

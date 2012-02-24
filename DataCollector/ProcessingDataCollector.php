@@ -13,25 +13,55 @@ use Symfony\Component\HttpKernel\DataCollector\DataCollector,
 Symfony\Component\HttpFoundation\Request,
 Symfony\Component\HttpFoundation\Response;
 
+use Processing\Processor;
+
+/**
+ * Data collector to fetch queue information from the processing library
+ *
+ * @author Marcel Beerta <marcel@etcpasswd.de>
+ */
 class ProcessingDataCollector extends DataCollector
 {
+    /**
+     * Processor instance
+     *
+     * @var \Processing\Processor
+     */
     protected $processor;
 
-    public function __construct(\Processing\Processor $processor)
+    /**
+     * @param \Processing\Processor $processor
+     */
+    public function __construct(Processor $processor)
     {
         $this->processor = $processor;
     }
 
+    /**
+     * Return details about a queue
+     *
+     * @return mixed
+     */
     public function getQueue()
     {
         return $this->data['queues'];
     }
 
+    /**
+     * Return the size of a given queue
+     *
+     * @return number
+     */
     public function getQueueSize()
     {
         return array_sum($this->data['queues']);
     }
 
+    /**
+     * Returns a list of items within all queues
+     *
+     * @return mixed
+     */
     public function getItems()
     {
         return $this->data['jobs'];
@@ -65,5 +95,4 @@ class ProcessingDataCollector extends DataCollector
     {
         return 'processing';
     }
-
 }

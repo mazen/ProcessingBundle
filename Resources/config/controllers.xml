@@ -5,7 +5,6 @@
 
     <services>
         <service id="processing.controller.status" class="Processing\Bundle\ProcessingBundle\Controller\StatusController">
-            
             <argument type="service" id="processing.processor" />
             <argument type="service" id="templating" />
         </service>

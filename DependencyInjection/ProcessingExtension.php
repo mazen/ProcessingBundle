@@ -14,6 +14,11 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension,
     Symfony\Component\DependencyInjection\Loader\XmlFileLoader,
     Symfony\Component\Config\FileLocator;
 
+/**
+ * Processing DI Extensions
+ *
+ * @author Marcel Beerta <marcel@etcpasswd.de>
+ */
 class ProcessingExtension extends Extension
 {
     /**
