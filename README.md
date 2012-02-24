@@ -2,6 +2,7 @@ ProcessingBundle
 ----------------
 This Bundle is for the [Processing Library](https://github.com/mazen/processing).
 
+[![Build Status](https://secure.travis-ci.org/mazen/ProcessingBundle.png?branch=master)](http://travis-ci.org/mazen/ProcessingBundle)
 
 Installation
 ------------
